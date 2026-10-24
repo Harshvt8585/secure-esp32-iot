@@ -1,0 +1,28 @@
+# ESP-IDF build artifacts
+firmware/**/build/
+firmware/**/managed_components/
+firmware/**/dependencies.lock
+firmware/**/sdkconfig
+firmware/**/sdkconfig.old
+
+# Secrets — never commit real keys/certs
+certs/*.key
+certs/*.pem
+!certs/README.md
+*.pem
+*secret*
+*private*key*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# OS/editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+
+# Logs / data dumps that are too large or machine-specific
+*.log
